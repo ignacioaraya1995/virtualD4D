@@ -4,7 +4,7 @@ from PIL import Image
 from io import BytesIO
 import numpy as np
 
-def download_street_view_image(property, googlemaps_api_key, size='1200x1200'):
+def download_street_view_image(property, googlemaps_api_key, size='600x600'):
     address = f"{property.street_address}, {property.city}, {property.state} {property.zipcode}, USA"
     base_url = "https://maps.googleapis.com/maps/api/streetview"
     image_path = f"images/{property.folio}.jpg"
